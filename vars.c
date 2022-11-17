@@ -52,7 +52,6 @@ void check_chain(info_t *info, char *buf, size_t *p, size_t i, size_t len)
 	if (info->cmd_buf_type == CMD_AND)
 	{
 		f (info->status)
-
 		{
 			buf[i] = 0;
 			j = len;
