@@ -6,7 +6,6 @@
  * @d: the delimeter string
  * Return: a pointer to an array of strings, or NULL on failure
  */
-
 char **strtow(char *str, char *d)
 {
 	int i, j, k, m, numwords = 0;
@@ -19,7 +18,6 @@ char **strtow(char *str, char *d)
 	for (i = 0; str[i] != '\0'; i++)
 		if (!is_delim(str[i], d) && (is_delim(str[i + 1], d) || !str[i + 1]))
 			numwords++;
-
 	if (numwords == 0)
 		return (NULL);
 	s = malloc((1 + numwords) * sizeof(char *));
@@ -47,7 +45,6 @@ char **strtow(char *str, char *d)
 	s[j] = NULL;
 	return (s);
 }
-
 /**
  * **strtow2 - splits a string into words
  * @str: the input string

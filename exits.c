@@ -29,7 +29,6 @@ char *_strncpy(char *dest, char *src, int n)
 	}
 	return (s);
 }
-
 /**
  **_strncat - concatenates two strings
  *@dest: the first string
@@ -56,7 +55,6 @@ char *_strncat(char *dest, char *src, int n)
 		dest[i] = '\0';
 	return (s);
 }
-
 /**
  **_strchr - locates a character in a string
  *@s: the string to be parsed
@@ -69,6 +67,5 @@ char *_strchr(char *s, char c)
 		if (*s == c)
 			return (s);
 	} while (*s++ != '\0');
-
 	return (NULL);
 }
